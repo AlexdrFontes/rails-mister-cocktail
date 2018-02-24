@@ -1,4 +1,19 @@
-<h1>Create a New Cocktail</h1>
-<%= render 'form', cocktail: @cocktail %>
-
-<%= link_to 'Back', cocktails_path %>
+<div class="row">
+  <div class="col-xs-12" align="center" >
+    <h1>Create a New Cocktail</h1>
+    <%= render 'form', cocktail: @cocktail %>
+    <div class="container-button">
+      <div class="btn-medium">
+        <%= link_to "Cocktails List", cocktails_path, :class => "btn", style:"color: grey"%>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fa fa-github"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+  </div>
